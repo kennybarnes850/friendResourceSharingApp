@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shared</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans+Condensed:300,400,700i,800,900" rel="stylesheet">
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/3.3/examples/sticky-footer-navbar/sticky-footer-navbar.css" rel="stylesheet">
+
+    <!-- Footer -->
+    <link href="https://getbootstrap.com/docs/3.3/examples/sticky-footer-navbar/sticky-footer-navbar.css" rel="stylesheet">
+
+    <!-- Our Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <!-- NAV BAR================================================================================================== -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand" href="logo"></div>
+                <a href="/resources">
+                    <img src="assets/img/frs_logo3.gif" width="140" height="auto" alt="Friend Resource Finder" />
+                </a>
+            </div>
+            <!-- /right .navbar-collapse -->
+            <div class="collapse navbar-collapse" id="navbar-brand-centered">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: white">
+                            <span class="glyphicon glyphicon-menu-hamburger" style="padding-left: 10px font-size: 50px"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/resources">My Resources</a>
+                            </li>
+                            <li>
+                                <a href="/shared">Shared</a>
+                            </li>
+                            <li>
+                                <a href="/about">About Us</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="/logout">
+                                    <i class="icon-off"></i> Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- MY RESOURCES ================================================================================================== -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="public_bk">
+                    <h2>Shared With Me</h2>
+                    <div class="table-responsive">
+                        <table id="mytable" class="table table-bordered" style="width:100%">
+                            <thead>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Topic</th>
+                                <th>Link</th>
+                                <th>Description</th>
+                            </thead>
+                            <tbody id="friends-table">
+                            </tbody>
+                        </table>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2>Public</h2>
+                                <div class="table-responsive">
+                                    <table id="example" class="table table-bordered" style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th>Topic</th>
+                                                <th>Link</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="public-table">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER  ================================================================================================== -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa fa-facebook fa-2x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.dropbox.com" target="_blank">
+                            <i class="fa fa-dropbox fa-2x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.flickr.com/" target="_blank">
+                            <i class="fa fa-flickr fa-2x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/" target="_blank">
+                            <i class="fa fa-github fa-2x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com" target="_blank">
+                            <i class="fa fa-linkedin fa-2x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tumblr.com/" target="_blank">
+                            <i class="fa fa-tumblr fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>
+                <span id="copyright_text">
+                    <p>FRS | Friends Resource Sharing © 2018</p>
+                </span>
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts ================================================================================================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/shared.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $('.dropdown').click(function () {
+                $(this).find('.dropdown-menu').toggle();
+            })
+        })
+        $(document).ready(function () {
+
+            $('.dropdown').mouseenter(function () {
+                $(this).find('.dropdown-menu').show('slow');
+            })
+            $('.dropdown').mouseleave(function () {
+                $(this).find('.dropdown-menu').hide('slow');
+            })
+        })
+    </script>
+
+</body>
+
+</html>
